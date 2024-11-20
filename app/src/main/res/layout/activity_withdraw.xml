@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Withdraw">
+
+    <ImageView
+        android:id="@+id/topbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/top_background" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="হেলো, \nটাকা তুলতে ফ্রমটি \nফিলাপ করুন"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/galada_regular"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:padding="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topbg">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" নাম"
+            android:fontFamily=""
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPersonName"
+            android:hint="নাম লিখুন"
+            android:fontFamily=""
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" বিকাশ নাম্বার"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/bkash"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPersonName"
+            android:hint="বিকাশ নাম্বার লিখুন"
+            android:drawableLeft="@drawable/baseline_numbers_24"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" GPA"
+            android:textColor="#000000"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/gpa"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPersonName"
+            android:hint="GPA লিখুন"
+            android:drawableLeft="@drawable/ic_baseline_lock_reset_24"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" কত $?"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/dollerammount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:padding="12dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPersonName"
+            android:hint="কত লিখুন"
+            android:drawableLeft="@drawable/baseline_attach_money_24"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/withdrawButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_bg"
+            style="@style/Widget.AppCompat.Button"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:text="টাকা তুলুন"
+            android:fontFamily=""
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
