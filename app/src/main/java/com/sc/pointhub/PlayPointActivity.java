@@ -117,19 +117,25 @@ public class PlayPointActivity extends AppCompatActivity implements RecycleViewI
         ImmutableList<QueryProductDetailsParams.Product> productList = ImmutableList.of(
                 //Product 1
                 QueryProductDetailsParams.Product.newBuilder()
-                        .setProductId("test_coins_111")
+                        .setProductId("1_dollar")
                         .setProductType(BillingClient.ProductType.INAPP)
                         .build(),
 
                 //Product 2
                 QueryProductDetailsParams.Product.newBuilder()
-                        .setProductId("test_coins_201")
+                        .setProductId("2_dollar")
                         .setProductType(BillingClient.ProductType.INAPP)
                         .build(),
 
                 //Product 3
                 QueryProductDetailsParams.Product.newBuilder()
-                        .setProductId("test_coins_30")
+                        .setProductId("3_dollar")
+                        .setProductType(BillingClient.ProductType.INAPP)
+                        .build(),
+
+                //Product 4
+                QueryProductDetailsParams.Product.newBuilder()
+                        .setProductId("5_dollar")
                         .setProductType(BillingClient.ProductType.INAPP)
                         .build()
         );
@@ -202,11 +208,11 @@ public class PlayPointActivity extends AppCompatActivity implements RecycleViewI
 
         productIds = new ArrayList<>();
         coins = new ArrayList<>();
-        productIds.add("test_coins_111");
+        productIds.add("1_dollar");
         coins.add(10);
-        productIds.add("test_coins_201");
+        productIds.add("2_dollar");
         coins.add(20);
-        productIds.add("test_coins_30");
+        productIds.add("3_dollar");
         coins.add(30);
     }
 

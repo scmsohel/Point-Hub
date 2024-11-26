@@ -74,25 +74,25 @@
             <TextView
                 android:id="@+id/forgot_password"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:padding="8dp"
                 android:text="পাসওয়ার্ড গেছেন?"
-                android:textColor="@color/lavender"
+                android:textColor="#3A51FD"
                 android:textSize="16sp" />
 
 
             <TextView
                 android:id="@+id/signUpRedirectText"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginTop="5dp"
                 android:padding="8dp"
                 android:layout_gravity="center"
                 android:text="এখনো নিবন্ধন করা হয়নি? একাউন্ট করুন"
                 android:textAlignment="center"
-                android:textColor="@color/lavender"
+                android:textColor="#475AFB"
                 android:textSize="17sp" />
 
         </LinearLayout>

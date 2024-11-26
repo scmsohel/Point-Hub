@@ -37,15 +37,16 @@
             android:layout_marginEnd="20dp"
             android:layout_marginTop="8dp"
             android:textSize="16sp"
-            android:textColor="@color/lavender"
+            android:textColor="#5B6AFF"
             app:layout_constraintTop_toBottomOf="@id/forgotTitle"
             app:layout_constraintBottom_toTopOf="@id/emailBox"/>
 
         <EditText
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:id="@+id/emailBox"
             android:textColor="@color/lavender"
+            android:text="আপনার ইমেইল লিখুন"
             android:textSize="16sp"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="30dp"
