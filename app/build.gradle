@@ -8,7 +8,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.sc.pointhub"
+        applicationId "com.wdtheprovider.inapppurchase"
         minSdk 24
         targetSdk 34
         versionCode 1
@@ -41,12 +41,16 @@ dependencies {
     implementation 'com.google.firebase:firebase-messaging:24.0.3'
     implementation "com.airbnb.android:lottie:3.4.0"
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.29'
+    implementation 'com.google.guava:guava:24.1-jre'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+
+    def billing_version = "7.1.1"
+
+    implementation "com.android.billingclient:billing:$billing_version"
+
     testImplementation libs.junit
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
-    dependencies {
-        def billing_version = "7.1.1"
 
-        implementation "com.android.billingclient:billing:$billing_version"
-    }
 }
